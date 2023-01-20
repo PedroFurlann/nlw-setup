@@ -25,7 +25,7 @@ export function HabitDay({ completed = 0, amount = 0, date }: HabitDayProps) {
         'bg-violet-800 border-violet-600': completedPercentage >= 20 && completedPercentage < 40,
         'bg-violet-700 border-violet-500': completedPercentage >= 40 && completedPercentage < 60,
         'bg-violet-600 border-violet-500': completedPercentage >= 60 && completedPercentage < 80,
-        'bg-violet-500 border-violet-400': completedPercentage >= 80,
+        'bg-violet-500 border-violet-400': completedPercentage >= 80 && completedPercentage < 100,
         'bg-violet-400 border-violet-300': completedPercentage === 100,
       })} />
 
